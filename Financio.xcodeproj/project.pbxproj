@@ -11,6 +11,7 @@
 		A74D57EF297A3810008AF8EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74D57EE297A3810008AF8EE /* ContentView.swift */; };
 		A74D57F1297A3811008AF8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74D57F0297A3811008AF8EE /* Assets.xcassets */; };
 		A74D57F4297A3811008AF8EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74D57F3297A3811008AF8EE /* Preview Assets.xcassets */; };
+		A7C92F9C29816B4C004F18F0 /* BasicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A74D57EE297A3810008AF8EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A74D57F0297A3811008AF8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A74D57F3297A3811008AF8EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		A74D57EB297A3810008AF8EE /* Financio */ = {
 			isa = PBXGroup;
 			children = (
-				A74D57EC297A3810008AF8EE /* FinancioApp.swift */,
-				A74D57EE297A3810008AF8EE /* ContentView.swift */,
+				A7C92F97298169F9004F18F0 /* View */,
+				A7C92F9829816A01004F18F0 /* ViewModel */,
+				A7C92F9929816A0E004F18F0 /* Model */,
+				A7C92F9A29816A1C004F18F0 /* StatticDataAndHelper */,
 				A74D57F0297A3811008AF8EE /* Assets.xcassets */,
 				A74D57F2297A3811008AF8EE /* Preview Content */,
 			);
@@ -65,6 +69,69 @@
 				A74D57F3297A3811008AF8EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7C92F97298169F9004F18F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A74D57EC297A3810008AF8EE /* FinancioApp.swift */,
+				A74D57EE297A3810008AF8EE /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7C92F9829816A01004F18F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A7C92FA3298172E8004F18F0 /* DataModelManagment */,
+				A7C92FA2298172D9004F18F0 /* CatagoreyVM */,
+				A7C92FA1298172BC004F18F0 /* TransactionVM */,
+				A7C92FA0298172A6004F18F0 /* AccountVM */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A7C92F9929816A0E004F18F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7C92F9A29816A1C004F18F0 /* StatticDataAndHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatticDataAndHelper;
+			sourceTree = "<group>";
+		};
+		A7C92FA0298172A6004F18F0 /* AccountVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountVM;
+			sourceTree = "<group>";
+		};
+		A7C92FA1298172BC004F18F0 /* TransactionVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TransactionVM;
+			sourceTree = "<group>";
+		};
+		A7C92FA2298172D9004F18F0 /* CatagoreyVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CatagoreyVM;
+			sourceTree = "<group>";
+		};
+		A7C92FA3298172E8004F18F0 /* DataModelManagment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModelManagment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +206,7 @@
 			files = (
 				A74D57EF297A3810008AF8EE /* ContentView.swift in Sources */,
 				A74D57ED297A3810008AF8EE /* FinancioApp.swift in Sources */,
+				A7C92F9C29816B4C004F18F0 /* BasicDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
