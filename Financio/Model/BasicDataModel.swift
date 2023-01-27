@@ -12,19 +12,19 @@ struct Account{
     let id: String
     let email: String
     let password: String
-    let createdAt: Date
+    let createdAt: String
 }
 
 
 // Main transaction
-struct Transaction{
-    let id: String
-    let accountID: String
+struct Transaction: Identifiable{
+    let id: Int
+    let accountID: Int
     let amount: Double
     let category: String
-    let date: Date
-    let note: String?
-    let createdAt: Date
+    let date: String
+    let note: String
+    let createdAt: String
 }
 
 //For creating Report category based
@@ -32,7 +32,7 @@ struct Category{
     let id: String
     let name: String
     let buget: Double
-    let createdAt: Date
+    let createdAt: String
 }
 
 /*
