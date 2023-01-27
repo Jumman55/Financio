@@ -8,14 +8,14 @@
 import Foundation
 
 ///Those are all the category for app
-var categories = ["Auto", "Entertainment", "Home", "Food", "Medical", "Personal_Items", "Travel", "Utilities", "Others"]
+var categories = ["Auto", "Entertainment", "Home", "Food", "Medical", "Personal Items", "Travel", "Utilities", "Others"]
 
 
 ///Those are some static data to create the app more easily
 var transctions: [Transaction] = [
     Transaction(id:0, accountID:47, amount:43.41, category:"Medical", date:"21/03/2022", note:"There still missing some data", createdAt:"22/10/2022"),
     Transaction(id:1, accountID:47, amount:64.44, category:"Others", date:"22/03/2022", note:"There still missing some data", createdAt:"10/03/2022"),
-    Transaction(id:2, accountID:47, amount:95.79, category:"Personal_Items", date:"04/01/2022", note:"There still missing some data", createdAt:"23/10/2022"),
+    Transaction(id:2, accountID:47, amount:95.79, category:"Personal Items", date:"04/01/2022", note:"There still missing some data", createdAt:"23/10/2022"),
     Transaction(id:3, accountID:47, amount:47.21, category:"Travel", date:"19/01/2022", note:"There still missing some data", createdAt:"16/09/2022" ),
     Transaction(id:4, accountID:47, amount:17.42, category:"Home", date:"02/06/2022", note:"There still missing some data", createdAt:"18/10/2022"),
     Transaction(id:5, accountID:47, amount:38.79, category:"Food", date:"04/04/2022", note:"There still missing some data", createdAt:"12/04/2022"),

@@ -17,9 +17,11 @@ struct ContentView: View {
                         Spacer()
                         Text("\(Int(totalTransactionByCategory(Transactions: transctions, category: cat)))" + ".00€")
                         }
+
                 }
 
             }
+            .listStyle(.sidebar)
             }
 
         }

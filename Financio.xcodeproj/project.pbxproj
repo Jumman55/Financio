@@ -14,6 +14,8 @@
 		A7C92F9C29816B4C004F18F0 /* BasicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */; };
 		A7C92FA52981794F004F18F0 /* BasicDataModelStaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92FA42981794F004F18F0 /* BasicDataModelStaticData.swift */; };
 		A7C92FA729842E25004F18F0 /* TransactionManageFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92FA629842E25004F18F0 /* TransactionManageFunc.swift */; };
+		A7C92FAA29847153004F18F0 /* HomePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92FA929847153004F18F0 /* HomePage1.swift */; };
+		A7C92FAC298475FF004F18F0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92FAB298475FF004F18F0 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataModel.swift; sourceTree = "<group>"; };
 		A7C92FA42981794F004F18F0 /* BasicDataModelStaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataModelStaticData.swift; sourceTree = "<group>"; };
 		A7C92FA629842E25004F18F0 /* TransactionManageFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionManageFunc.swift; sourceTree = "<group>"; };
+		A7C92FA929847153004F18F0 /* HomePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage1.swift; sourceTree = "<group>"; };
+		A7C92FAB298475FF004F18F0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		A7C92F97298169F9004F18F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7C92FA829847132004F18F0 /* HomeView */,
 				A74D57EC297A3810008AF8EE /* FinancioApp.swift */,
 				A74D57EE297A3810008AF8EE /* ContentView.swift */,
 			);
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C92FA42981794F004F18F0 /* BasicDataModelStaticData.swift */,
+				A7C92FAB298475FF004F18F0 /* Colors.swift */,
 			);
 			path = StatticDataAndHelper;
 			sourceTree = "<group>";
@@ -138,6 +144,14 @@
 			children = (
 			);
 			path = DataModelManagment;
+			sourceTree = "<group>";
+		};
+		A7C92FA829847132004F18F0 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A7C92FA929847153004F18F0 /* HomePage1.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7C92FA52981794F004F18F0 /* BasicDataModelStaticData.swift in Sources */,
+				A7C92FAA29847153004F18F0 /* HomePage1.swift in Sources */,
 				A74D57EF297A3810008AF8EE /* ContentView.swift in Sources */,
+				A7C92FAC298475FF004F18F0 /* Colors.swift in Sources */,
 				A74D57ED297A3810008AF8EE /* FinancioApp.swift in Sources */,
 				A7C92FA729842E25004F18F0 /* TransactionManageFunc.swift in Sources */,
 				A7C92F9C29816B4C004F18F0 /* BasicDataModel.swift in Sources */,
@@ -271,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
