@@ -9,12 +9,13 @@ import SwiftUI
 
 struct HomePage1: View {
     //MARK: - PROPERTIES
-    
+    @State var showDetailsView = false
     //MARK: -BODY
     var body: some View {
         ZStack{
             Color("Light Gray")
                 .ignoresSafeArea()
+                .blur(radius: 3, opaque: true)
             VStack{
                 mainCard
                     .padding(.top, 72)
@@ -25,16 +26,24 @@ struct HomePage1: View {
                         .padding(.leading, 36)
                         .font(.title3)
                     Spacer()
-                    Text("ViewAll >")
-                        .fontWeight(.regular)
-                        .foregroundColor(Color("Light Blue"))
-                        .padding(.trailing, 36)
+                    Button{
+                         showDetailsView = true
+                    } label:
+                    {
+                        Text("View All >")
+                            .fontWeight(.regular)
+                            .foregroundColor(Color("Light Blue"))
+                            .padding(.trailing, 36)
                         .font(.body)
+                    }
+                    .sheet(isPresented: $showDetailsView){
+                        CategoriesBugetView()
+                    }
                 }//:HStack
                 ScrollView{
                     LazyVStack{
-                        ForEach(1...10, id: \.self){ tran in
-                            transactionRow
+                        ForEach(transctions, id: \.id){ tran in
+                            TransactionsRow(transaction: tran)
                                 .padding(.top, 5)
                         }
                     }
@@ -52,6 +61,9 @@ struct HomePage1: View {
                 .frame(width: 321, height:168, alignment: .top)
                 .overlay(Color.mainCardGradiant3)
                 .cornerRadius(24)
+                .shadow(radius: 10)
+
+                
                 
             VStack{
                 Text("Total Expenses")
@@ -62,7 +74,7 @@ struct HomePage1: View {
                     .padding(.bottom, 16)
                 
                 
-                Text("€750.00")
+                Text("€\(Int(totalExpenseCount(Transactions: transctions)))"+".00")
                     .fontWeight(.bold)
                     .foregroundColor(Color("Light Gray"))
                     .padding(.horizontal, 87)
@@ -76,30 +88,44 @@ struct HomePage1: View {
             
         }
     }//:mainCardView
+
     
-    var transactionRow: some View{
+}//: HomePage1
+
+struct TransactionsRow: View{
+    //MARK: - TransactionRow PROPERTIES
+    var transaction: Transaction
+    //MARK: -Body
+    var body: some View{
         ZStack{
             Rectangle()
                 .frame(width: 321, height: 76)
                 .overlay(Color.transactionRowGradiant7)
                 .cornerRadius(10)
-            HStack{
-                Text("Logo")
-                    .padding([.top, .leading, .bottom], 21.0)
-                Text("Food")
-                    .padding(.vertical, 21.0)
-                    .padding(.leading, 27)
-                VStack{
-                    Text("-€45.00")
-                    Text("27/12/2023")
+                .shadow(radius: 6)
+                .blur(radius: 1)
+                
+            
+            ForEach(transctions, id: \.id){ tran in
+                HStack{
+                    Text("Logo")
+                        .padding([.top, .leading, .bottom], 21.0)
+                    Text("\(transaction.category)")
+                        .padding(.vertical, 21.0)
+                        .padding(.leading, 27)
+                    VStack{
+                        Text("€\(Int(transaction.amount))"+".00")
+                            .font(.caption)
+                        Text("\(transaction.date)")
+                            .font(.caption2)
+                    }
+                    .padding(.leading, 80)
+                    .padding(.trailing, 8)
                 }
-                .padding(.leading, 80)
-                .padding(.trailing, 8)
             }
         }
     }
-    
-}//: HomePage1
+}
 
 //MARK: -PREVIEW
 struct HomePage1_Previews: PreviewProvider {
