@@ -10,6 +10,7 @@ import SwiftUI
 struct HomePage1: View {
     //MARK: - PROPERTIES
     @State var showDetailsView = false
+    @State var hasScrolled = false
     //MARK: -BODY
     var body: some View {
         ZStack{
@@ -37,12 +38,14 @@ struct HomePage1: View {
                         .font(.body)
                     }
                     .sheet(isPresented: $showDetailsView){
-                        CategoriesBugetView()
+                        DetailsTransactionView()
+                            .presentationDetents([.large])
+                            .presentationDragIndicator(.visible)
                     }
                 }//:HStack
                 ScrollView{
                     LazyVStack{
-                        ForEach(transctions, id: \.id){ tran in
+                        ForEach(transctions.prefix(10), id: \.id){ tran in
                             TransactionsRow(transaction: tran)
                                 .padding(.top, 5)
                         }
@@ -51,6 +54,9 @@ struct HomePage1: View {
                
                 
             }
+        }//:ZStack
+        .overlay{
+            NavigationBarView(title: "Financio",hasScrolled: $hasScrolled)
         }
         
     }//:bodyView

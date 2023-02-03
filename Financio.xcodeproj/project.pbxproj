@@ -12,6 +12,10 @@
 		A74D57F1297A3811008AF8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74D57F0297A3811008AF8EE /* Assets.xcassets */; };
 		A74D57F4297A3811008AF8EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74D57F3297A3811008AF8EE /* Preview Assets.xcassets */; };
 		A787843D298D1CFF0051694B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A787843C298D1CFF0051694B /* LaunchScreen.storyboard */; };
+		A787843F298D27CA0051694B /* DetailsTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787843E298D27CA0051694B /* DetailsTransactionView.swift */; };
+		A7878442298D40E20051694B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7878441298D40E20051694B /* TabBarView.swift */; };
+		A7878444298D41B00051694B /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7878443298D41B00051694B /* TabBarModel.swift */; };
+		A7878446298D546A0051694B /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7878445298D546A0051694B /* NavigationBarView.swift */; };
 		A7C92F9C29816B4C004F18F0 /* BasicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */; };
 		A7C92FA52981794F004F18F0 /* BasicDataModelStaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92FA42981794F004F18F0 /* BasicDataModelStaticData.swift */; };
 		A7C92FA729842E25004F18F0 /* TransactionManageFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92FA629842E25004F18F0 /* TransactionManageFunc.swift */; };
@@ -27,6 +31,10 @@
 		A74D57F0297A3811008AF8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A74D57F3297A3811008AF8EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A787843C298D1CFF0051694B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A787843E298D27CA0051694B /* DetailsTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTransactionView.swift; sourceTree = "<group>"; };
+		A7878441298D40E20051694B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		A7878443298D41B00051694B /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		A7878445298D546A0051694B /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataModel.swift; sourceTree = "<group>"; };
 		A7C92FA42981794F004F18F0 /* BasicDataModelStaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataModelStaticData.swift; sourceTree = "<group>"; };
 		A7C92FA629842E25004F18F0 /* TransactionManageFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionManageFunc.swift; sourceTree = "<group>"; };
@@ -84,9 +92,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A7878440298D40CE0051694B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A7878441298D40E20051694B /* TabBarView.swift */,
+				A7878445298D546A0051694B /* NavigationBarView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		A7C92F97298169F9004F18F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7878440298D40CE0051694B /* Navigation */,
 				A7C92FAD298ACAB9004F18F0 /* AddBuget */,
 				A7C92FA829847132004F18F0 /* HomeView */,
 				A74D57EC297A3810008AF8EE /* FinancioApp.swift */,
@@ -111,6 +129,7 @@
 			children = (
 				A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */,
 				A7C92FA629842E25004F18F0 /* TransactionManageFunc.swift */,
+				A7878443298D41B00051694B /* TabBarModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C92FA929847153004F18F0 /* HomePage1.swift */,
+				A787843E298D27CA0051694B /* DetailsTransactionView.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -239,6 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7878444298D41B00051694B /* TabBarModel.swift in Sources */,
+				A787843F298D27CA0051694B /* DetailsTransactionView.swift in Sources */,
+				A7878446298D546A0051694B /* NavigationBarView.swift in Sources */,
 				A7C92FA52981794F004F18F0 /* BasicDataModelStaticData.swift in Sources */,
 				A7C92FAA29847153004F18F0 /* HomePage1.swift in Sources */,
 				A74D57EF297A3810008AF8EE /* ContentView.swift in Sources */,
@@ -246,6 +269,7 @@
 				A7C92FAF298ACAEC004F18F0 /* CategoriesBugetView.swift in Sources */,
 				A74D57ED297A3810008AF8EE /* FinancioApp.swift in Sources */,
 				A7C92FA729842E25004F18F0 /* TransactionManageFunc.swift in Sources */,
+				A7878442298D40E20051694B /* TabBarView.swift in Sources */,
 				A7C92F9C29816B4C004F18F0 /* BasicDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

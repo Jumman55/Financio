@@ -19,6 +19,7 @@ struct CategoriesBugetView: View {
                 Color.mainCardGradiant3
                     .ignoresSafeArea()
                     .overlay(.thinMaterial )
+                    .blur(radius: 30)
                     
                 
                 VStack {
@@ -42,10 +43,11 @@ struct CategoriesBugetView: View {
             
                 
             }//:ZStack
+            .navigationTitle("Details")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button{presentationMode.wrappedValue.dismiss()} label:{Text("Done").bold()})
         }//:Navi
-        .navigationTitle("Details")
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarItems(trailing: Button{presentationMode.wrappedValue.dismiss()} label:{Text("Done").bold()})
+        
     }
 }
 
