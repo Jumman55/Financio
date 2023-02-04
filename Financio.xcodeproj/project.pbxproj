@@ -16,6 +16,7 @@
 		A7878442298D40E20051694B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7878441298D40E20051694B /* TabBarView.swift */; };
 		A7878444298D41B00051694B /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7878443298D41B00051694B /* TabBarModel.swift */; };
 		A7878446298D546A0051694B /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7878445298D546A0051694B /* NavigationBarView.swift */; };
+		A7878449298D5E4F0051694B /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7878448298D5E4F0051694B /* ReportsView.swift */; };
 		A7C92F9C29816B4C004F18F0 /* BasicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */; };
 		A7C92FA52981794F004F18F0 /* BasicDataModelStaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92FA42981794F004F18F0 /* BasicDataModelStaticData.swift */; };
 		A7C92FA729842E25004F18F0 /* TransactionManageFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92FA629842E25004F18F0 /* TransactionManageFunc.swift */; };
@@ -35,6 +36,7 @@
 		A7878441298D40E20051694B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		A7878443298D41B00051694B /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 		A7878445298D546A0051694B /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		A7878448298D5E4F0051694B /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
 		A7C92F9B29816B4C004F18F0 /* BasicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataModel.swift; sourceTree = "<group>"; };
 		A7C92FA42981794F004F18F0 /* BasicDataModelStaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDataModelStaticData.swift; sourceTree = "<group>"; };
 		A7C92FA629842E25004F18F0 /* TransactionManageFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionManageFunc.swift; sourceTree = "<group>"; };
@@ -101,9 +103,18 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		A7878447298D5DD70051694B /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				A7878448298D5E4F0051694B /* ReportsView.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
 		A7C92F97298169F9004F18F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7878447298D5DD70051694B /* Reports */,
 				A7878440298D40CE0051694B /* Navigation */,
 				A7C92FAD298ACAB9004F18F0 /* AddBuget */,
 				A7C92FA829847132004F18F0 /* HomeView */,
@@ -266,6 +277,7 @@
 				A7C92FAA29847153004F18F0 /* HomePage1.swift in Sources */,
 				A74D57EF297A3810008AF8EE /* ContentView.swift in Sources */,
 				A7C92FAC298475FF004F18F0 /* Colors.swift in Sources */,
+				A7878449298D5E4F0051694B /* ReportsView.swift in Sources */,
 				A7C92FAF298ACAEC004F18F0 /* CategoriesBugetView.swift in Sources */,
 				A74D57ED297A3810008AF8EE /* FinancioApp.swift in Sources */,
 				A7C92FA729842E25004F18F0 /* TransactionManageFunc.swift in Sources */,

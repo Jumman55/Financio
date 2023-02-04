@@ -28,8 +28,8 @@ struct Transaction: Identifiable{
 }
 
 //For creating Report category based
-struct Category{
-    let id: String
+struct Category: Identifiable{
+    let id: Int
     let name: String
     let buget: Double
     let createdAt: String

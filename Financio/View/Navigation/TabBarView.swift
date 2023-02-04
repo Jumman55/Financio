@@ -21,7 +21,7 @@ struct TabBarView: View {
                     case .add:
                         CategoriesBugetView()
                     case .report:
-                        ContentView()
+                        ReportsView()
                 }
             }//:Group
             .frame(maxWidth: .infinity, maxHeight: .infinity)

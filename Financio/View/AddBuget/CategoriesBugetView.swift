@@ -44,7 +44,7 @@ struct CategoriesBugetView: View {
                 
             }//:ZStack
             .navigationTitle("Details")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.automatic)
             .navigationBarItems(trailing: Button{presentationMode.wrappedValue.dismiss()} label:{Text("Done").bold()})
         }//:Navi
         

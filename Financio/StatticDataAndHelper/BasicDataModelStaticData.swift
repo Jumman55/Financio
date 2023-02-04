@@ -35,3 +35,16 @@ var transctions: [Transaction] = [
     Transaction(id:19, accountID:47, amount:88.02, category:"Entertainment", date:"23/07/2022", note:"There still missing some data", createdAt:"03/02/2022"),
     Transaction(id: 20, accountID: 47, amount: 5.98, category: "Food", date: "", note: "", createdAt: "")
 ]
+
+var bugets:[Category]=[
+    Category(id:0, name:"Auto", buget:65.88, createdAt:"20/06/2022"),
+    Category(id:1, name:"Entertainment", buget:60.24, createdAt:"13/09/2022"),
+    Category(id:2, name:"Home", buget:73.93, createdAt:"14/10/2022"),
+    Category(id:3, name:"Food", buget:22.58, createdAt:"11/02/2022"),
+    Category(id:4, name:"Medical", buget:43.89, createdAt:"12/06/2022"),
+    Category(id:5, name:"Personal_Items", buget:33.44, createdAt:"05/12/2022"),
+    Category(id:6, name:"Travel", buget:44.08, createdAt:"02/05/2022"),
+    Category(id:7, name:"Utilities", buget:100.29, createdAt:"18/07/2022"),
+    Category(id:8, name:"Others", buget:31.26, createdAt:"22/02/2022")
+
+]
