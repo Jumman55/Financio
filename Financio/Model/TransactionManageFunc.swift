@@ -28,3 +28,8 @@ func totalTransactionByCategory(Transactions:[Transaction], category: String) ->
     }
     return totalExpensesByCategory
 }
+
+///Add a new transaction in the static data of transaction array
+func addTransaction(newTransaction: Transaction){
+    transctions.append(newTransaction)
+}

@@ -11,30 +11,42 @@ struct CategoriesBugetView: View {
     //MARK: - PROPERTIES
     @State var cate = "Food"
     @State var date = Date()
-    @Environment(\.presentationMode) var presentationMode
+    @State var showPresentationMode: Bool = false
     //MARK: -BODY
     var body: some View {
         NavigationView{
             ZStack{
-                Color.mainCardGradiant3
+                Image("BG3")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
-                    .overlay(.thinMaterial )
-                    .blur(radius: 30)
                     
                 
                 VStack {
-                    HStack {
-                        Text("Choose a Category")
-                        Spacer()
-                        Picker("Choose a Category", selection: $cate) {
-                            ForEach(categories, id: \.self){
-                                Text($0)
-                            }
+                    
+                        Button{
+                            showPresentationMode = true
+                        } label: {
+                            AddExpensesButtonView()
                         }
-                        .pickerStyle(.automatic)
-                    }//:HStack
-                    .padding(.horizontal, 36)
-                    .padding(.bottom, 20)
+                        .sheet(isPresented: $showPresentationMode){
+                            AddDataButton(cate: $cate)
+                                .presentationDetents([.medium])
+                                .presentationDragIndicator(.visible)
+                        }
+                        Button{
+                            
+                        } label: {
+                            AddExpensesButtonView(sfImagename: "note.text.badge.plus", titleName: "Note")
+                        }
+                      
+                        Button{
+                            
+                        } label: {
+                            AddExpensesButtonView(sfImagename: "calendar", titleName: "Date")
+                        }
+                        
+                   
 
                     DatePicker("Choose your date", selection: $date,in: Date()... ,displayedComponents: [.date])
                         .padding(.horizontal, 36)
@@ -44,8 +56,6 @@ struct CategoriesBugetView: View {
                 
             }//:ZStack
             .navigationTitle("Details")
-            .navigationBarTitleDisplayMode(.automatic)
-            .navigationBarItems(trailing: Button{presentationMode.wrappedValue.dismiss()} label:{Text("Done").bold()})
         }//:Navi
         
     }

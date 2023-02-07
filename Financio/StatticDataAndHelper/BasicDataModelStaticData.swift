@@ -48,3 +48,4 @@ var bugets:[Category]=[
     Category(id:8, name:"Others", buget:31.26, createdAt:"22/02/2022")
 
 ]
+

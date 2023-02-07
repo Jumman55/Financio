@@ -15,9 +15,10 @@ struct DetailsTransactionView: View {
     var body: some View {
         NavigationView{
             ZStack{
-                Color.transactionRowGradiant7
+                Image("BG3")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
-                    .blur(radius: 50, opaque: true)
                 ScrollView{
                     LazyVStack{
                         ForEach(transctions, id: \.id){ tran in
