@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A74A72C6299254EA00EA4027 /* AddDataButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A72C5299254EA00EA4027 /* AddDataButton.swift */; };
+		A74A72C6299254EA00EA4027 /* AddDataCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A72C5299254EA00EA4027 /* AddDataCategoryButton.swift */; };
 		A74A72C8299269BA00EA4027 /* AddExpensesButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A72C7299269BA00EA4027 /* AddExpensesButtonView.swift */; };
 		A74D57ED297A3810008AF8EE /* FinancioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74D57EC297A3810008AF8EE /* FinancioApp.swift */; };
 		A74D57EF297A3810008AF8EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74D57EE297A3810008AF8EE /* ContentView.swift */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A74A72C5299254EA00EA4027 /* AddDataButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataButton.swift; sourceTree = "<group>"; };
+		A74A72C5299254EA00EA4027 /* AddDataCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataCategoryButton.swift; sourceTree = "<group>"; };
 		A74A72C7299269BA00EA4027 /* AddExpensesButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesButtonView.swift; sourceTree = "<group>"; };
 		A74D57E9297A3810008AF8EE /* Financio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Financio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74D57EC297A3810008AF8EE /* FinancioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancioApp.swift; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C92FAE298ACAEC004F18F0 /* CategoriesBugetView.swift */,
-				A74A72C5299254EA00EA4027 /* AddDataButton.swift */,
+				A74A72C5299254EA00EA4027 /* AddDataCategoryButton.swift */,
 				A74A72C7299269BA00EA4027 /* AddExpensesButtonView.swift */,
 			);
 			path = AddBuget;
@@ -289,7 +289,7 @@
 				A7C92FA729842E25004F18F0 /* TransactionManageFunc.swift in Sources */,
 				A7878442298D40E20051694B /* TabBarView.swift in Sources */,
 				A7C92F9C29816B4C004F18F0 /* BasicDataModel.swift in Sources */,
-				A74A72C6299254EA00EA4027 /* AddDataButton.swift in Sources */,
+				A74A72C6299254EA00EA4027 /* AddDataCategoryButton.swift in Sources */,
 				A74A72C8299269BA00EA4027 /* AddExpensesButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

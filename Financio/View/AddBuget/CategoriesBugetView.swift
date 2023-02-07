@@ -10,8 +10,12 @@ import SwiftUI
 struct CategoriesBugetView: View {
     //MARK: - PROPERTIES
     @State var cate = "Food"
+    @State var note = ""
     @State var date = Date()
-    @State var showPresentationMode: Bool = false
+    @State var showPresentationMode0: Bool = false
+    @State var showPresentationMode1: Bool = false
+    @State var showPresentationMode2: Bool = false
+    @State var showPresentationMode3: Bool = false
     //MARK: -BODY
     var body: some View {
         NavigationView{
@@ -25,31 +29,37 @@ struct CategoriesBugetView: View {
                 VStack {
                     
                         Button{
-                            showPresentationMode = true
+                            showPresentationMode1 = true
                         } label: {
                             AddExpensesButtonView()
                         }
-                        .sheet(isPresented: $showPresentationMode){
-                            AddDataButton(cate: $cate)
+                        .sheet(isPresented: $showPresentationMode1){
+                            AddDataCategoryButton(cate: $cate)
                                 .presentationDetents([.medium])
                                 .presentationDragIndicator(.visible)
                         }
                         Button{
-                            
+                            showPresentationMode2 = true
                         } label: {
                             AddExpensesButtonView(sfImagename: "note.text.badge.plus", titleName: "Note")
                         }
+                        .sheet(isPresented: $showPresentationMode2){
+                            AddDataNoteButton(note: $note)
+                                .presentationDetents([.large])
+                                .presentationDragIndicator(.visible)
+                        }
                       
                         Button{
-                            
+                            showPresentationMode3 = true
                         } label: {
                             AddExpensesButtonView(sfImagename: "calendar", titleName: "Date")
                         }
+                        .sheet(isPresented: $showPresentationMode3){
+                            AddDataDateButton(date: $date)
+                                .presentationDetents([.medium])
+                                .presentationDragIndicator(.visible)
+                        }
                         
-                   
-
-                    DatePicker("Choose your date", selection: $date,in: Date()... ,displayedComponents: [.date])
-                        .padding(.horizontal, 36)
                    
                 }
             
