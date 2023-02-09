@@ -48,13 +48,14 @@ struct AddDataNoteButton: View {
     //MARK: -BODY
     var body: some View {
         NavigationView {
-            ZStack{
+            ZStack(alignment: .top){
                 Color.white.opacity(0.5)
                     .ignoresSafeArea()
                 LinearGradient(colors: [.white.opacity(0.5), .white.opacity(0.0)], startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea()
                 
                 TextField("Write any details", text: $note)
+                    .keyboardType(.default)
                     .frame(width: 340, height: 70)
                     .padding(5)
                     .background(.ultraThinMaterial, in:RoundedRectangle(cornerRadius: 20, style: .continuous))
@@ -84,8 +85,8 @@ struct AddDataDateButton: View {
                 LinearGradient(colors: [.white.opacity(0.5), .white.opacity(0.0)], startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea()
                 
-                DatePicker("Choose your date", selection: $date,in: Date()... ,displayedComponents: [.date])
-                    .pickerStyle(.wheel)
+                DatePicker("Choose your date", selection: $date,in: Date().addingTimeInterval(-1000000)... ,displayedComponents: [.date])
+                    .datePickerStyle(.graphical)
             }//:ZStack
             .navigationTitle("Date")
             .navigationBarTitleDisplayMode(.inline)
